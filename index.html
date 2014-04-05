@@ -11,25 +11,38 @@
 <body> 
 
 	<!-- Start of first page -->
-	<div data-role="page" data-theme="c" data-content-theme="c" id="first">
+	<div data-role="page" data-theme="a" data-content-theme="a" id="first">
 
 		<div data-role="header" data-theme="a">
-			<h1>Hello</h1>
-			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="refresh">Refresh</a>
-			<a href="#second" data-role="button"  class="ui-btn-inline" data-icon="arrow-r">Forward</a>
+			<h1>Hello, MSUPA!</h1>
+			<a href="#dialog" class="ui-btn" data-transition="slidedown">What is this?</a>
+			<a href="#second" data-role="button"  class="ui-btn-inline" data-icon="arrow-r" data-transition="slide">Forward</a>
 		</div><!-- /header -->
 
 		<div data-role="content" data-theme="a">
 
-			<div style="width:55%;float:right"><p>Hello, MSUPA!</p>
-			The Moscow State University of printing arts the name of Ivan Fedorov - single Institute of Higher Education of Russia, which accomplishes complex training of personnel with the highest vocational education for entire spectrum of professions in the region of mediaindustry.</div>
-			<div style="float:left"><img src="2.jpeg"width="500" height="350"></div>		
+			<div style="float:right"><p>
+			The Moscow State University of printing arts the name of Ivan Fedorov - single Institute of Higher Education of Russia, which accomplishes complex training of personnel with the highest vocational education for entire spectrum of professions in the region of mediaindustry.</p></div>	
 		</div><!-- /content -->
 
 		<div data-role="footer" data-theme="a">
 			<h4></h4>
 		</div><!-- /footer -->
 	</div><!-- /page -->
+	<div data-role="page" data-dialog="true" id="dialog">
+
+	<div data-role="header">
+		<h1>What is this?</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        This is lab #2
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	
+	</div><!-- /footer -->
+</div><!-- /page -->
 
 
 	<!-- Start of second page -->
@@ -37,15 +50,15 @@
 
 		<div data-role="header" data-theme="a">
 			<h1>Adress</h1>
-			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="arrow-l">Back</a>
-			<a href="#third" data-role="button" class="ui-btn-inline" data-icon="arrow-r">Forward</a>
+			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="arrow-l" data-rel="back">Back</a>
+			<a href="#third" data-role="button" class="ui-btn-inline" data-icon="arrow-r" data-transition="slide">Forward</a>
 			
 		</div><!-- /header -->
 
 		<div  data-role="content" data-theme="a" claaa>
 			<div>Russian federation, Moscow,Pryanishnikova, 2a</div>
-			<div ><img src="mgup.jpg">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.667289160859!2d37.54381299999999!3d55.833734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537ce1cda8b8b%3A0xcfcc6d198b32288d!2z0YPQuy4g0J_RgNGP0L3QuNGI0L3QuNC60L7QstCwLCAy0JAsINCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1395613402316" width="500" height="350" frameborder="0" style="border:0; float:right"></iframe></div>	
+			<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.667289160859!2d37.54381299999999!3d55.833734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537ce1cda8b8b%3A0xcfcc6d198b32288d!2z0YPQuy4g0J_RgNGP0L3QuNGI0L3QuNC60L7QstCwLCAy0JAsINCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1395613402316" width="500" height="350" frameborder="0" style="border:0"></iframe></div>	
 			
 			
 		</div><!-- /content -->
@@ -60,8 +73,8 @@
 
 		<div data-role="header" data-theme="a">
 			<h1>Myself</h1>
-			<a href="#second" data-role="button" class="ui-btn-inline" data-icon="arrow-l">Back</a>
-			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="arrow-r">To begining</a>
+			<a href="#second" data-role="button" class="ui-btn-inline" data-icon="arrow-l" data-rel="back">Back</a>
+			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="arrow-r" data-transition="slide">To begining</a>
 			
 		</div><!-- /header -->
 
