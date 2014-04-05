@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>lab2</title> 
+	<link rel="stylesheet" href="JQmobile/jquery.mobile-1.4.2.css" />
+	<link rel="stylesheet" href="JQmobile/jquery.mobile.icons.min.css" />
+	<script src="JQmobile/jqm.js"></script>
+	<script src="JQmobile/jquery.mobile-1.4.2.js"></script>
+
+</head> 
+<body> 
+
+	<!-- Start of first page -->
+	<div data-role="page" data-theme="c" data-content-theme="c" id="first">
+
+		<div data-role="header" data-theme="a">
+			<h1>Hello</h1>
+			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="refresh">Refresh</a>
+			<a href="#second" data-role="button"  class="ui-btn-inline" data-icon="arrow-r">Forward</a>
+		</div><!-- /header -->
+
+		<div data-role="content" data-theme="a">
+
+			<div style="width:55%;float:right"><p>Hello, MSUPA!</p>
+			The Moscow State University of printing arts the name of Ivan Fedorov - single Institute of Higher Education of Russia, which accomplishes complex training of personnel with the highest vocational education for entire spectrum of professions in the region of mediaindustry.</div>
+			<div style="float:left"><img src="2.jpeg"width="500" height="350"></div>		
+		</div><!-- /content -->
+
+		<div data-role="footer" data-theme="a">
+			<h4></h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+
+	<!-- Start of second page -->
+	<div data-role="page" data-theme="a" data-content-theme="a" id="second">
+
+		<div data-role="header" data-theme="a">
+			<h1>Adress</h1>
+			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="arrow-l">Back</a>
+			<a href="#third" data-role="button" class="ui-btn-inline" data-icon="arrow-r">Forward</a>
+			
+		</div><!-- /header -->
+
+		<div  data-role="content" data-theme="a" claaa>
+			<div>Russian federation, Moscow,Pryanishnikova, 2a</div>
+			<div ><img src="mgup.jpg">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.667289160859!2d37.54381299999999!3d55.833734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537ce1cda8b8b%3A0xcfcc6d198b32288d!2z0YPQuy4g0J_RgNGP0L3QuNGI0L3QuNC60L7QstCwLCAy0JAsINCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1395613402316" width="500" height="350" frameborder="0" style="border:0; float:right"></iframe></div>	
+			
+			
+		</div><!-- /content -->
+
+		<div data-role="footer" data-theme="a">
+			<h4></h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+		<!-- Start of third page -->
+	<div data-role="page" data-theme="a" data-content-theme="a" id="third">
+
+		<div data-role="header" data-theme="a">
+			<h1>Myself</h1>
+			<a href="#second" data-role="button" class="ui-btn-inline" data-icon="arrow-l">Back</a>
+			<a href="#first" data-role="button" class="ui-btn-inline" data-icon="arrow-r">To begining</a>
+			
+		</div><!-- /header -->
+
+		<div data-role="content" data-theme="a">	
+			<p>Shoybonov Bato group DCIM4-1</p>		
+		</div><!-- /content -->
+
+		<div data-role="footer" data-theme="a">
+		<p><h1>Pages</h1></p>
+		<div data-role="navbar"> 
+		<ul>
+			<li><a href="#first">First</a></li>
+			<li><a href="#second">Second</a></li>
+			<li><a href="#third">Third</a></li>
+		</ul>
+			
+		</div>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+</body>
+</html>
