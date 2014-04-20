@@ -6,9 +6,123 @@
 	<link rel="stylesheet" href="JQmobile/jquery.mobile.icons.min.css" />
 	<script src="JQmobile/jqm.js"></script>
 	<script src="JQmobile/jquery.mobile-1.4.2.js"></script>
+	<script>
+
+function line()
+{
+    var canvas = document.getElementById('line');
+    var obCanvas = canvas.getContext('2d');
+    //Б
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(10, 10);
+    obCanvas.lineTo(10, 100);
+    obCanvas.stroke();
+//Б
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = '#E3767F';
+    obCanvas.moveTo(10, 10);
+    obCanvas.lineTo(50, 10);
+    obCanvas.stroke();
+    //Б
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(10, 50);
+    obCanvas.lineTo(50, 50);
+    obCanvas.stroke();
+    //Б
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = '#DB3621';
+    obCanvas.moveTo(10, 100);
+    obCanvas.lineTo(50, 100);
+    obCanvas.stroke();
+    //Б
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(50, 100);
+    obCanvas.lineTo(50, 50);
+    obCanvas.stroke();
+    //А
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(70, 10);
+    obCanvas.lineTo(70, 102);
+    obCanvas.stroke();
+    //А
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = '#E3767F';
+    obCanvas.moveTo(70, 10);
+    obCanvas.lineTo(110, 10);
+    obCanvas.stroke();
+    //А
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(70, 50);
+    obCanvas.lineTo(110, 50);
+    obCanvas.stroke();
+    //А
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(110, 10);
+    obCanvas.lineTo(110, 102);
+    obCanvas.stroke();
+    //Т
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(152, 10);
+    obCanvas.lineTo(152, 102);
+    obCanvas.stroke();
+    //Т
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = '#E3767F';
+    obCanvas.moveTo(130, 10);
+    obCanvas.lineTo(174, 10);
+    obCanvas.stroke();
+    //О
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(194, 10);
+    obCanvas.lineTo(194, 100);
+    obCanvas.stroke();
+    //О
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = '#E3767F';
+    obCanvas.moveTo(194, 10);
+    obCanvas.lineTo(234, 10);
+    obCanvas.stroke();
+        //О
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = '#DB3621';
+    obCanvas.moveTo(194, 100);
+    obCanvas.lineTo(234, 100);
+    obCanvas.stroke();
+        //О
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 2;
+    obCanvas.strokeStyle = 'red';
+    obCanvas.moveTo(234, 10);
+    obCanvas.lineTo(234, 100);
+    obCanvas.stroke();
+}
+
+</script>
 
 </head> 
-<body> 
+<body onLoad="line()"> 
 
 	<!-- Start of first page -->
 	<div data-role="page" data-theme="a" data-content-theme="a" id="first">
@@ -80,7 +194,8 @@
 		</div><!-- /header -->
 
 		<div data-role="content" data-theme="a">	
-			<p>Shoybonov Bato group DCIM4-1</p>		
+			<p>Shoybonov Bato group DCIM4-1</p>	
+			<canvas id="line"></canvas>	
 		</div><!-- /content -->
 
 		<div data-role="footer" data-theme="a">
