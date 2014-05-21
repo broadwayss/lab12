@@ -131,7 +131,7 @@ function line()
 
 		<div data-role="header" data-theme="a">
 			<h1>Hello, MSUPA!</h1>
-			<a href="#dialog" class="ui-btn" data-transition="slidedown">Take a moment</a>
+			<a href="#dialog" class="ui-btn" data-transition="slidedown">Camera</a>
 			<a href="#second" data-role="button"  class="ui-btn-inline" data-icon="arrow-r" data-transition="slide">Forward</a>
 		</div><!-- /header -->
 
@@ -148,7 +148,7 @@ function line()
 	<div data-role="page" data-dialog="true" id="dialog" data-close-btn="none">
 
 	<div data-role="header">
-		<h1>Take a moment</h1>
+		<h1>Camera</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
@@ -177,6 +177,7 @@ function onPhotoDataSuccess(imageData) {
 // Get image handle
 //
 var smallImage = document.getElementById('smallImage');
+<div id="smallImage"></div>
 	</div><!-- /content -->
 
 	<div data-role="footer">
